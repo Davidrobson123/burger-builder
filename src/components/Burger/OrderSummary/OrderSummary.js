@@ -4,10 +4,6 @@ import Aux from '../../../hoc/Aux/Aux';
 import Button from '../../UI/Button/Button';
 
 class OrderSummary extends Component {
-    // This could be a functional component, used for debugging
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        console.log('[OrderSummary]: will update')
-    }
 
     render() {
 
