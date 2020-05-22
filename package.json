@@ -1,4 +1,5 @@
 {
+  "homepage": "https://davidrobson123.github.io/burger-builder/",
   "name": "burger-builder",
   "version": "0.1.0",
   "private": true,
@@ -21,6 +22,8 @@
     "css-loader": "3.4.2",
     "dotenv": "8.2.0",
     "dotenv-expand": "5.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^6.6.0",
     "eslint-config-react-app": "^5.2.1",
     "eslint-loader": "3.0.3",
@@ -53,6 +56,7 @@
     "react-redux": "^7.2.0",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
+    "react-test-renderer": "^16.13.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "resolve": "1.15.0",
@@ -69,6 +73,8 @@
     "workbox-webpack-plugin": "4.3.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
@@ -142,5 +148,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
